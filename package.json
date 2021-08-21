@@ -5,9 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node build/index.js",
-    "launch": "npm run build && npm run start",
-    "dev": "npx tsnd --respawn src/index.ts"
+    "start": "npx tsc && node build/index.js",
+    "dev": "npx tsnd --respawn --clear src/index.ts"
   },
   "author": "Temm",
   "license": "ISC",
